@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- ====================================Navigation bar====================== -->
+
+    <div class="header1">
+        <div class="navbar">
+
+            <!-- select country -->
+            <div id="country" class="country_select">
+                <div class="select">
+                    <p id="text">Select Your Country</p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Arabic')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Arabic</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Pakistan')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pakistan</p>
+                    </li>
+                    <li class="option" onclick="myfunction('England')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>England</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- search box -->
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid"
+                    placeholder="Search Cars, Mobiles, Phones and More....">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+            <!-- language selection -->
+            <div class="language">
+                <p id="eng-tag">English</p>
+                <ul id="h9" class="hin-eng">
+                    <li  onclick="languageolx('English')">English</li>
+                    <li  onclick="languageolx('Hindi')">Hindi</li>
+                </ul>
+            </div>
+            <!-- message -->
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+                <!-- <i class="fa-regular fa-bell"></i> -->
+            </div>
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <!-- user logo -->
+            <div class="your-logo" id="">
+                <div class="logo" id="logo_id">
+                    <img src="./olx-images/pic3.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownid">
+                    <div class="nameimg">
+                        <img src="./olx-images/pic3.jpg">
+                        <p>Khateeb Ur Rehman</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <hr>
+                        <li><i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li><i class="fa-regular fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <hr>
+                        <li><i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+
+                        <li><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+            <div class="signup">
+                <button><i class="fa-regular fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================Advertisment============== -->
+    <div class="ad_img">
+        <img src="./olx-images/ad1.jpg" />
+        <i class="fa-regular fa-rectangle-xmark" id="ad_imgicon"></i>
+    </div>
+
+    <!-- ==================Products =================-->
+
+
+    <div class="Products">
+        <!-- ============Row 1============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <!-- column1 -->
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <!-- ============Row 2============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <!-- ============Row 3============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <!-- ============Row 4============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ==================Load More button================= -->
+    <div class="load_more">
+        <button id="load-more">Load More</button>
+    </div>
+    <div class="load_more_products" id="load_more_products_i">
+        <!-- ============Row 1============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <!-- column1 -->
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <!-- ============Row 2============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <!-- ============Row 3============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <!-- ============Row 4============== -->
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="./olx-images/product-1.jpg">
+                <h2>Rs, 7000</h2>
+                <p>Mi TV stick</p>
+                <div class="address_data">
+                    <p>Karachi, Pakistan</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!-- ======================Advertisment2============== -->
+    <div class="ad_img1">
+        <img src="./olx-images/ad2.jpg" />
+        <i class="fa-regular fa-rectangle-xmark" id="ad_imgicon1"></i>
+    </div>
+    <!-- ========download app=========== -->
+    <div class="download_app">
+        <div class="download">
+            <img class="footer_img" src="./olx-images/footar.jpg">
+            <div class="text">
+                <h1>TRY THE OLX APP</h1>
+                <p>Buy, Sell and find just about anything using <br>the app on your mobile</p>
+
+            </div>
+            <!-- <hr> -->
+            
+            <div class="download_store">
+                <p>GET YOUR APP TODAY</p>
+                <img class="icon_logo" src="./olx-images/appstorea.svg" alt="Appstore"/>
+                <img class="icon_logo" src="./olx-images/playstre.svg" alt="googleplaystore"/>
+                <img class="icon_logo" src="./olx-images/appgallery.svg" alt="appgallery" />
+
+            </div>
+        </div>
+    </div>
+    <!-- =================footer========== -->
+    <footer class="footar">
+        <ul>
+            <li class="listheder">Popular Categories</li>
+            <li>Cars</li>
+            <li>Flat for Rent</li>
+            <li>Mobile phones</li>
+            <li>Jobs</li>
+         
+        </ul>
+        <ul>
+            <li class="listheder">Trending searches</li>
+            <li>Bikes</li>
+            <li>Watches</li>
+            <li>Books</li>
+            <li>Dogs</li>
+         
+        </ul>
+        <ul>
+            <li class="listheder">About us</li>
+            <li>About Dubizzle Group</li>
+            <li>OLX Blog</li>
+            <li>Contact Us</li>
+            <li>OLX for Buisnesses</li>
+         
+        </ul>
+        <ul>
+            <li class="listheder">OLX</li>
+            <li>Help</li>
+            <li>Sitemap</li>
+            <li>Terms of use</li>
+            <li>Privacy policy</li>
+         
+        </ul>
+        <ul class="footericon">
+            <li class="listheder Followb ">Follow US</li>
+            <li class="s252545"><i class="fa-brands fa-facebook   fa-2x2"   style="color: #839a9c;"></i></li>
+            <li class="s252545"><i class="fa-brands fa-twitter   fa-2x2"   style="color: #7d9297;"></i></li>
+            <li class="s252545"><i class="fa-brands fa-youtube   fa-2x2"   style="color: #5b7a80;"></i></li>
+            <li class="s252545"><i class="fa-brands fa-instagram fa-2x2" style="color: #678889;"></i></li>
+<li class="Followb s252541">
+    <ul class="footerimgs s252543">
+        <li><img class="icon_logo s252542" src="./olx-images/appstorea.svg" alt="applestore"/></li>
+        <li><img class="icon_logo s252542" src="./olx-images/playstre.svg" alt="applestore"/></li>
+        <li><img class="icon_logo s252542" src="./olx-images/appgallery.svg" alt="applestore"/></li>
+    </ul>
+</li>
+        </ul>
+
+    </footer>
+
+    <footer class="copyright">
+        <div class="t252525">
+<h4>Free Classifieds in Pakistan . <i class="fa-regular fa-copyright" style="color: #fafafa;"></i>  2006-2023 OLX</h4>
+        </div>
+    </footer>
+    <script>
+        // ====================================Navigation bar======================
+        let country = document.getElementById('country');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+        country.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted');
+        });
+
+        function myfunction(onkar) {
+            text.innerHTML = onkar;
+        }
+
+        let language = document.querySelector('.language');
+        let hin_eng = document.querySelector('.hin-eng');
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+            // hin_eng.classList.toggle('h2525');
+        });
+
+        let h99=document.getElementById('h9');
+
+      // let engtag= document.getElelemntById('eng-tag');
+       // let L5542=hin_eng.getElementsByTagName('li');
+
+//         let L5542=h99.getElementsByTagName('li');
+//         for(i=0;i<L5542.length;i++){
+// L5542[i].addEventListener('click',function(){
+//     engtag.textContent=this.textContent;
+// })
+//         }
+let engtag=document.getElementById('eng-tag');
+h99.addEventListener('click',(event)=>{
+    if(event.target.tagName === "LI"){
+        engtag.textContent=event.target.textContent;
+    }
+})
+
+// hin_eng.addEventListener('click' , ()=> {
+//     L5542 =hin_eng.value;
+//     document.getElementById('eng-tag').innerHTML = L5542;
+// })
+        // function languageolx(anyone) {
+        //     document.getElementById('eng-tag').innerHTML = anyone;
+        // }
+        let logo_id = document.getElementById('logo_id');
+        let dropdownid = document.getElementById('dropdownid');
+        logo_id.addEventListener('click', () => {
+            dropdownid.classList.toggle("block_div");
+        });
+
+        // =====================ad1============
+        let adimg = document.querySelector('.ad_img');
+        let ad_imgicon = document.getElementById('ad_imgicon');
+
+        ad_imgicon.addEventListener('click', () => {
+            adimg.style = 'display:none';
+        });
+        //===============ad2===============
+        let ad_imgicon1 = document.getElementById('ad_imgicon1');
+        let adimg1 = document.querySelector('.ad_img1');
+        ad_imgicon1.addEventListener('click', () => {
+            adimg1.style = 'display:none';
+        });
+        //let load_more_products = document.getElementById('load_more_products_i');
+        let load_more_products = document.querySelector('.load_more_products');
+        let load_more = document.getElementById('load-more');
+        load_more.addEventListener('click', () => {
+            load_more_products.style = 'display:block';
+            load_more.style = 'display:none';
+        });
+    </script>
+</body>
+
+</html>
